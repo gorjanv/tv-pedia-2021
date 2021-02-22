@@ -4,18 +4,8 @@ import { Spin } from 'antd'
 import { useSelector } from 'react-redux'
 
 import ShowList from '../../components/ShowList'
-
-const SpinnerContainer = styled.div`
-  display: grid;
-  place-items: center;
-`
-
-const Message = styled.div`
-  display: grid;
-  place-items: center;
-  margin-top: 32px;
-  color: #888;
-`
+import { Message } from '../../components/styles'
+import Spinner from '../../components/Spinner'
 
 const Home = () => {
   const { searchTerm, results, loading, error, errorMessage } = useSelector(
@@ -23,11 +13,7 @@ const Home = () => {
   )
 
   if (loading) {
-    return (
-      <SpinnerContainer>
-        <Spin size='large' />
-      </SpinnerContainer>
-    )
+    return <Spinner />
   }
 
   if (results.length === 0) {

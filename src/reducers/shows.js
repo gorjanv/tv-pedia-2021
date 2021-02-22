@@ -22,13 +22,13 @@ export const fetchShowsByName = createAsyncThunk(
 const showListSlice = createSlice({
   name: 'shows',
   initialState: {
+    searchTerm: '',
     results: [],
     loading: false,
     error: null,
     errorMessage: null
   },
   reducers: {
-    // standard reducer logic, with auto-generated action types per reducer
     setSearchTerm: (state, { payload }) => {
       return { ...state, searchTerm: payload }
     }
