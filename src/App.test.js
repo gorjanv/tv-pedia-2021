@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import store from './store'
 import App from './App'
 
-test('renders learn react link', () => {
+test('Renders the search page', () => {
   const { getByText } = render(
     <Router>
       <Provider store={store}>

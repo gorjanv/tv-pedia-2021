@@ -60,7 +60,7 @@ const ShowDetails = () => {
         Back to {showName || '-'}
       </BackButton>
       <Content>
-        <Title>{episodeInfo.name}</Title>
+        <Title>{`${showName} - ${episodeInfo.name}`}</Title>
         <InfoContainer>
           <img
             alt=''

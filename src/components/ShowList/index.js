@@ -24,6 +24,7 @@ const ShowList = ({ shows }) => {
     <Container>
       {shows.map(({ show }) => (
         <ShowCard
+          key={show.id}
           onClick={() => history.push(`/show/${show.id}`)}
           hoverable
           cover={

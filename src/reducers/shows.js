@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const searchShowsByName = async searchTerm => {
   try {
-    const response = await axios.get(`https://api.tvmaze.com/search/shows`, {
+    const response = await axios.get('https://api.tvmaze.com/search/shows', {
       params: { q: searchTerm }
     })
     return Promise.resolve(response.data)
