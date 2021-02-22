@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: 396px) {
+  @media (max-width: 400px) {
     align-content: center;
     flex-wrap: nowarp;
     flex-direction: column;
