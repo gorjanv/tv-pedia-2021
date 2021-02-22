@@ -41,10 +41,9 @@ const SeasonsColumn = styled.div`
 `
 const Container = styled.div`
   margin: 8px;
-  }
 `
 
-const EpisodesColumn = styled.div`
+const EpisodesList = styled.div`
   margin-left: 16px;
   height: 400px;
   width: 100%;
@@ -53,6 +52,12 @@ const EpisodesColumn = styled.div`
     margin-left: 0;
     margin-top: 16px;
   }
+`
+
+const EpisodesColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Title = styled.div`
@@ -101,8 +106,8 @@ const EpisodesOverview = ({ episodes }) => {
               ))}
             </Select>
           </SeasonsColumn>
-          <div>
-            <EpisodesColumn>
+          <EpisodesColumn>
+            <EpisodesList>
               {paginatedEpisodes.map(ep => (
                 <Label
                   key={ep.id}
@@ -111,7 +116,7 @@ const EpisodesOverview = ({ episodes }) => {
                   {ep.name}
                 </Label>
               ))}
-            </EpisodesColumn>
+            </EpisodesList>
 
             {episodes[selectedSeason].length > DEFAULT_PAGE_SIZE && (
               <Pagination
@@ -124,7 +129,7 @@ const EpisodesOverview = ({ episodes }) => {
                 size='small'
               />
             )}
-          </div>
+          </EpisodesColumn>
         </ColumnsContainer>
       </Container>
     )

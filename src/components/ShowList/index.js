@@ -7,6 +7,12 @@ const Container = styled.div`
   padding: 24px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 396px) {
+    align-content: center;
+    flex-wrap: nowarp;
+    flex-direction: column;
+  }
 `
 
 const ShowCard = styled(Card)`

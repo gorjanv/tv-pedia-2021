@@ -39,7 +39,7 @@ const Header = () => {
       <Search
         placeholder='Search for a TV Show'
         onSearch={term => onSearch(term)}
-        style={{ width: 400 }}
+        style={{ maxWidth: 400 }}
       />
     </Container>
   )
