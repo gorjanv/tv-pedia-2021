@@ -1,8 +1,5 @@
 See the app in action -> [tv-pedia-2021](https://tv-pedia-2021.vercel.app/)
 
-## Running the app locally
-To run the app locally is easy, you jsut need to run `yarn start`.
-
 ## About the app
 The app uses the free version API of [TV Maze](https://www.tvmaze.com/api).
 Provides the functionality to lookup a TV show, see information about it -
