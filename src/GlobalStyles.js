@@ -9,6 +9,8 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 16px;
+    line-height: 1.5;
+    color: #777
   }
 `
 export default GlobalStyles

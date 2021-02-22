@@ -1,6 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Spin } from 'antd'
 import { useSelector } from 'react-redux'
 
 import ShowList from '../../components/ShowList'
@@ -14,6 +12,10 @@ const Home = () => {
 
   if (loading) {
     return <Spinner />
+  }
+
+  if (error) {
+    return <Message>An error ocurred: {errorMessage}</Message>
   }
 
   if (results.length === 0) {
