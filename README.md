@@ -1,4 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+See the app in action -> [tv-pedia-2021](https://tv-pedia-2021.vercel.app/)
+
+## Running the app locally
+To run the app locally is easy, you jsut need to run `yarn start`.
+
+## About the app
+The app uses the free version API of [TV Maze](https://www.tvmaze.com/api).
+Provides the functionality to lookup a TV show, see information about it -
+overview of all it's episodes and episode details.
+
+## Things to improve
+- Add more color or improve the design
+- Add more information for both the show and the episodes
+  - Maybe integrate the Episode details page in the Show details page
+- Add filtering options (genre, year, cast)
+- Create lists like favorites or seen 
+- Compare shows based on selected criteria
+- Improve the bradcrumbs
+- Add more tests
+- Refactor/Reuse styled components
+- Refactoring:
+  - `EpisodeDetails` and `ShowDetails` share quite a bit of code
+    - Extract one reusable component that will serve to display the details:
+      for a show or a episode of a show
+    - Extract the fetch functionality in a reusable hook
 
 ## Available Scripts
 
@@ -36,33 +60,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
