@@ -11,14 +11,13 @@ overview of all it's episodes and episode details.
   - Maybe integrate the Episode details page in the Show details page
 - Add filtering options (genre, year, cast)
 - Create lists like favorites or seen 
-- Compare shows based on selected criteria
 - Improve the bradcrumbs
 - Add more tests
 - Refactor/Reuse styled components
 - Refactoring:
   - `EpisodeDetails` and `ShowDetails` share quite a bit of code
     - Extract one reusable component that will serve to display the details:
-      for a show or a episode of a show
+      for a show or an
     - Extract the fetch functionality in a reusable hook
 
 ## Available Scripts
